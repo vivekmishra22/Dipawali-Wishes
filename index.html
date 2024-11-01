@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Dipawali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Salsa&family=Style+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <section class="hero-section">
+    <img class="jhalar" src="/images/page-1 design-1.png" alt="jhalar" />
+    <div class="pragraph-and-audio">
+      <p>
+        Hi <span id="receiver"></span>,
+        <br />
+        You mean the world to me... So this Dipawali, I made something for you!
+      </p>
+      <div class="audio-container">
+        <img src="/icons/music-icon.svg" alt="music-icon" />
+        <span class="soulful-music">&nbsp; Soulful Music &nbsp;</span>
+        <img class="playing-music-icon" src="/icons/music-bar.svg" alt="playing-music-icon" />
+        <audio src="/music/happy-diwali.mp4" controls autoplay></audio>
+      </div>
+    </div>
+    <img class="deekpak first-deepak" src="/images/diya 1.png" alt="deepak" />
+    <img class="deekpak second-deepak" src="/images/diya 1.png" alt="deepak" />
+    <!-- <img class="my-pic" src="/images/Vivek-Pic.png" alt="Vivek-Pic"> -->
+    
+  </section>
+  
+  <section class="lakshmi-ganesha-section">
+    <div class="horizontal-divider">
+      <div class="horizontal-line"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="horizontal-line"></div>
+    </div>
+    <img class="lakshmi-ganesha-img" src="/images/Vivek-Wishing-card.png" alt="lakshmi-ganesha" />
+    
+  </section>
+  <section class="lakshmi-ganesha-section">
+    <div class="horizontal-divider">
+      <div class="horizontal-line"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="horizontal-line"></div>
+    </div>
+    <img class="lakshmi-ganesha-img" src="/images/Lakshmi Maa and Ganesh ji 1.png" alt="lakshmi-ganesha" />
+    <h2>Wishing You a Blessed and Prosperous Deepawali</h2>
+    <div class="horizontal-divider">
+      <div class="horizontal-line"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="white-card-container">
+      <div class="white-card">
+        <p>Shine bright and stay blessed! ✨🪔</p>
+        <p>
+          May this Diwali light up new dreams, fresh hopes, and endless possibilities!
+        </p>
+      </div>
+      <img class="little-girl" src="/images/little-girl 1.png" alt="" />
+    </div>
+    <div class="horizontal-divider">
+      <div class="horizontal-line"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="lakshmi-ganesha-card">
+      <img src="/images/Maa Lakshmi.png" alt="lakshmi" />
+      <img src="/images/Ganesh ji.png" alt="ganesh" />
+    </div>
+    <div class="thank-you-text">
+      <p>Happy Dipawali and,</p>
+      <h2>Thank You For Everything...</h2>
+    </div>
+    <p class="my-name">Made with 💜 By <span id="sender"></span></p>
+  </section>
+
+  <script>
+    const receiverName = document.querySelector("#receiver");
+    const senderName = document.querySelector("#sender");
+    receiverName.innerText = new URLSearchParams(location.search).get(
+      "receiver"
+    );
+    senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Vivek Mishra';
+  </script>
+</body>
+
+</html>
